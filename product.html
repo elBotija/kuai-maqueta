@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>kuai</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+    <link rel="stylesheet" href="./css/slim-slider.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/slim-slider.js"></script>
+
+</head>
+<body class="product">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <a onclick="window.location.href='./index.html'" class="logo"><img src="./images/logo.svg" alt="kuai"/></a>
+                </div>
+                <div class="col">
+                    <div class="action-header col-12">
+                        <button id="login" onclick="window.location.href='./sing-up.html'">Validación</button>
+                        <select>
+                            <option>Todos los departamentos</option>
+                            <option>Indumentaria</option>
+                        </select>
+                        <input id="search" type="text" placeholder="Buscar"/>
+                        <button>Buscar</button>
+                        <a class="social pull-right" href="https://www.facebook.com/"><img src="./images/ig.svg"/></a>
+                        <a class="social pull-right" href="https://www.facebook.com/"><img src="./images/fb.svg"/></a>
+                    </div>
+                    <a href="" class="help pull-right">Ayuda</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="col-9">
+            <div class="slim-slider galery-product">
+                <div class="slim-slide" data-thumb="./images/lamp1.jpg">
+                    <img src="./images/lamp1.jpg">
+                </div>
+                <div class="slim-slide" data-thumb="./images/lamp1.jpg">
+                    <img src="./images/lamp1.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="product-info">
+                <h2>Lampara de techo araña</h2>
+                <span class="price">$2000</span>
+                <div class="payment-info">
+                    <i></i>
+                    <a href="">Mas informacion</a>
+                </div>
+                <div class="time-info">
+                    <i></i>
+                    <a href="">Mas informacion</a>
+                </div>
+                <ul class="specs">
+                    <li>color: blanco</li>
+                </ul>
+                <div class="quantity">
+                    1 unidad    
+                </div>
+                <button>COMPRAR</button>
+            </div>
+        </div>
+    </div>
+    <footer class="container">
+        <div class="col-12">
+            <a href="">Términos y condiciones</a>
+            <a href="">Politicas de privacidad</a>
+            <a href="">Ayuda</a>
+        </div>
+        <div class="col-12">
+            <p>Copyright © 2019 KUAI</p>
+        </div>
+    </footer>    
+
+    <script>
+        let Slider = new SlimSlider({
+            selector: '.slim-slider',
+            childsClassName :'.slim-slide',
+            threshold: 15,
+            dir: 'ltr',
+            showPointers : false,
+            showButtons: false,
+            showThumbnails: true,
+            infinite: true,
+            itemsPerSlide : 1
+        })
+    </script>
+</body>
+</html>

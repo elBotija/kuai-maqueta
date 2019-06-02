@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>kuai</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="sing-up">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <a onclick="window.location.href='./index.html'" class="logo"><img src="./images/logo.svg" alt="kuai"/></a>
+                </div>
+                <div class="col">
+                    <div class="action-header col-12">
+                        <button id="login" onclick="window.location.href='./sing-up.html'">Validación</button>
+                        <select>
+                            <option>Todos los departamentos</option>
+                            <option>Indumentaria</option>
+                        </select>
+                        <input id="search" type="text" placeholder="Buscar"/>
+                        <button>Buscar</button>
+                        <a class="social pull-right" href="https://www.facebook.com/"><img src="./images/ig.svg"/></a>
+                        <a class="social pull-right" href="https://www.facebook.com/"><img src="./images/fb.svg"/></a>
+                    </div>
+                    <a href="" class="help pull-right">Ayuda</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    <div class="container sing-up-form">
+        <div class="row">
+            <div class="col-3">
+                <h3 class="is-text-right">COMPLETÁ TUS DATOS</h3>
+            </div>
+            <div class="col-9">
+                <form id="sing-up" action="">
+                    <div class="row">    
+                        <div class="col-6">
+                            <input type="text" name="nombre" />
+                            <p>Nombre</p>
+                        </div>
+                        <div class="col-6">
+                            <input type="text" name="apellido" />
+                            <p>Apellido</p>
+                        </div>
+                        <div class="col-6">
+                            <input type="mail" name="mail" />
+                            <p>E Mail</p>
+                        </div>
+                        <div class="col-6">
+                            <input type="password" name="pass" />
+                            <p>Clave</p>
+                        </div>
+                        <div class="col-12 all-size">
+                            <button>CREAR CUENTA</button>
+                            <p class="policy">
+                                Al registrarme, declaro que soy mayor de edad y acepto los<br>
+                                    Términos y condiciones y las Políticas de privacidad de KUAI.
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="container">
+        <div class="col-12">
+            <a href="">Términos y condiciones</a>
+            <a href="">Politicas de privacidad</a>
+            <a href="">Ayuda</a>
+        </div>
+        <div class="col-12">
+            <p>Copyright © 2019 KUAI</p>
+        </div>
+    </footer>    
+</body>
+</html>

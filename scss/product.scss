@@ -1,0 +1,23 @@
+.product{
+    .galery-product{
+        margin-top: 20px;
+        .slim-slider-wrapper{
+            padding-left: 100px;
+            * {
+                width: calc(100% - 100px);
+            }
+        } 
+        .thumbs{
+            width: 100px;
+            top: 0;
+            bottom: inherit;
+            .thumb{
+                display: inline-block;
+                border-top-left-radius: 15px;
+                overflow: hidden;
+                width: 95px;
+                height: 95px;
+            }
+        }
+    }
+}

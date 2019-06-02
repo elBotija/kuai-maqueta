@@ -1,0 +1,29 @@
+footer{
+    font-weight: 300;
+    background: #fff;
+    min-height: 200px;
+    margin: 0;
+    position: relative;
+    top: -10px;
+    padding-top: 10px; 
+    a{
+        padding: 10px 60px 0px 0px; 
+        display: inline-block;
+        color: #000;
+    }
+    p{
+        color: $tertiary;
+        font-size: 12px;
+    }
+    &:before{
+        content:"";
+        height: 200px;
+        position: absolute;
+        bottom: 0;
+        width: 200vw;
+        left: -50%;
+        display: block;
+        background: #fff;
+        z-index: -1;
+    }
+}

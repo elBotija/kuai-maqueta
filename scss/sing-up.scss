@@ -1,0 +1,79 @@
+.sing-up{
+    background: $primary;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+    header:after{
+        display: none;
+    }
+    .action-header{
+        display: none;
+    }
+    .help{
+        display: inline-block;
+        color: #fff;
+        font-weight: 300;
+    }
+    h3{
+        font-size: 16px;
+        color: #fff;
+        margin: 0;
+    }
+    form#sing-up{
+        padding: 80px 10px 0px 10px;
+        background: #fff;
+        input{
+            border-radius: inherit;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            &:focus{
+                outline:none;
+                border:none;
+                box-shadow: 0 1px 0 #1a9f60;
+            }
+        }
+        p{
+            margin-top: 3px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        .all-size{
+            background: $tertiary;
+            padding: 30px 10px 130px 10px;
+            margin: 0;
+            margin-top: 80px;
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            position: relative;
+            z-index: 1;
+            button{
+                color: #fff;
+                background-color: $primary;
+                font-weight: 500;
+                border-radius: 0;
+                padding: 15px 30px;
+            }
+            .policy{
+                display: inline-block;
+                font-size: 12px;
+                line-height: 13px;
+                margin-bottom: 0;
+                margin-left: 10px;
+                color: #fff;
+            }
+            &:before{
+                content:"";
+                width: 200vw;
+                height: 207px;
+                position: absolute;
+                display: block;
+                background: $tertiary;
+                bottom: 0;
+                z-index: -1;
+                left: -50%;
+            }
+        }
+    }
+
+}
