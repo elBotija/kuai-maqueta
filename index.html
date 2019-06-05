@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./css/slim-slider.css">
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/slim-slider.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/simple-popup.js"></script>
 
 </head>
 <body>
@@ -70,89 +72,127 @@
                         <img src="http://lorempixel.com/300/150/abstract/">
                         <p>Juego de cubiertos </br>24 piezas Focus</p>
                         <span class="price">$5.649,00</span>
+                        <div class="previewButton">Vista rápida</div>
                     </div>
                     <div class="col-3 item">
                         <img src="http://lorempixel.com/300/150/abstract/">
                         <p>Juego de cubiertos </br>24 piezas Focus</p>
                         <span class="price">$5.649,00</span>
+                        <div class="previewButton">Vista rápida</div>
                     </div>
                     <div class="col-3 item">
                         <img src="http://lorempixel.com/300/150/abstract/">
                         <p>Juego de cubiertos </br>24 piezas Focus</p>
                         <span class="price">$5.649,00</span>
+                        <div class="previewButton">Vista rápida</div>
                     </div>
                     <div class="col-3 item">
                         <img src="http://lorempixel.com/300/150/abstract/">
                         <p>Juego de cubiertos </br>24 piezas Focus</p>
                         <span class="price">$5.649,00</span>
+                        <div class="previewButton">Vista rápida</div>
                     </div>
                     <div class="col-3 item">
                         <img src="http://lorempixel.com/300/150/abstract/">
                         <p>Juego de cubiertos </br>24 piezas Focus</p>
                         <span class="price">$5.649,00</span>
+                        <div class="previewButton">Vista rápida</div>
                     </div>
                     <div class="col-3 item">
                         <img src="http://lorempixel.com/300/150/abstract/">
                         <p>Juego de cubiertos </br>24 piezas Focus</p>
                         <span class="price">$5.649,00</span>
+                        <div class="previewButton">Vista rápida</div>
                     </div>
                     <div class="col-3 item">
                         <img src="http://lorempixel.com/300/150/abstract/">
                         <p>Juego de cubiertos </br>24 piezas Focus</p>
                         <span class="price">$5.649,00</span>
+                        <div class="previewButton">Vista rápida</div>
                     </div>
                     <div class="col-3 item">
                         <img src="http://lorempixel.com/300/150/abstract/">
                         <p>Juego de cubiertos </br>24 piezas Focus</p>
                         <span class="price">$5.649,00</span>
+                        <div class="previewButton">Vista rápida</div>
                     </div>
                     <div class="col-3 item">
                         <img src="http://lorempixel.com/300/150/abstract/">
                         <p>Juego de cubiertos </br>24 piezas Focus</p>
                         <span class="price">$5.649,00</span>
+                        <div class="previewButton">Vista rápida</div>
                     </div>
                     <div class="col-3 item">
                         <img src="http://lorempixel.com/300/150/abstract/">
                         <p>Juego de cubiertos </br>24 piezas Focus</p>
                         <span class="price">$5.649,00</span>
+                        <div class="previewButton">Vista rápida</div>
                     </div>
                     <div class="col-3 item">
                         <img src="http://lorempixel.com/300/150/abstract/">
                         <p>Juego de cubiertos </br>24 piezas Focus</p>
                         <span class="price">$5.649,00</span>
+                        <div class="previewButton">Vista rápida</div>
                     </div>
                     <div class="col-3 item">
                         <img src="http://lorempixel.com/300/150/abstract/">
                         <p>Juego de cubiertos </br>24 piezas Focus</p>
                         <span class="price">$5.649,00</span>
+                        <div class="previewButton">Vista rápida</div>
                     </div>
                     <div class="col-3 item">
                         <img src="http://lorempixel.com/300/150/abstract/">
                         <p>Juego de cubiertos </br>24 piezas Focus</p>
                         <span class="price">$5.649,00</span>
+                        <div class="previewButton">Vista rápida</div>
                     </div>
                     <div class="col-3 item">
                         <img src="http://lorempixel.com/300/150/abstract/">
                         <p>Juego de cubiertos </br>24 piezas Focus</p>
                         <span class="price">$5.649,00</span>
+                        <div class="previewButton">Vista rápida</div>
                     </div>
                     <div class="col-3 item">
                         <img src="http://lorempixel.com/300/150/abstract/">
                         <p>Juego de cubiertos </br>24 piezas Focus</p>
                         <span class="price">$5.649,00</span>
+                        <div class="previewButton">Vista rápida</div>
                     </div>
                     <div class="col-3 item">
                         <img src="http://lorempixel.com/300/150/abstract/">
                         <p>Juego de cubiertos </br>24 piezas Focus</p>
                         <span class="price">$5.649,00</span>
+                        <div class="previewButton">Vista rápida</div>
                     </div>
 
                 </div>
             </div>
         </div>
     </div>
-        
+    <div id="popup1">
+        <img src="http://lorempixel.com/300/150/abstract/" width="300" height="150" style="background:#ccc; float:left; margin-right: 10px;">
+        <p>Juego de cubiertos </br>24 piezas Focus</p>
+        <span class="price">$5.649,00</span>
+        <a style="    width: 200px;
+        display: inline-block;
+        float: left;
+        background: #008472;
+        color: #fff;
+        font-size: 21px;
+        font-weight: 300;
+        text-transform: capitalize;
+        text-align: center;
+        margin-top: 10px;cursor:pointer">Agregar al carro</a>
+    </div>
+
+
     <script>
+        $(document).ready(function(){
+            $(".previewButton").on("click", function(e) {
+                e.preventDefault();
+                $(this).simplePopup({ type: "html", htmlSelector: "#popup1" });
+            });
+        })
         let Slider = new SlimSlider({
             selector: '.slim-slider',
             childsClassName :'.slim-slide',
